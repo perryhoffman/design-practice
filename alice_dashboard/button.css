@@ -1,0 +1,11 @@
+/* buttons */
+
+.btn{
+    font-size:12px;
+    text-transform: uppercase;
+
+  }
+  .btn-pending{
+    background-color: #faab18;
+    border: 1px solid #faab18;
+  }

@@ -1,0 +1,495 @@
+body{
+    background-color: #eeeeee;
+    font-family: 'Open Sans', sans-serif;
+    padding-top:48px;
+    padding-left:186px;
+    margin:0px;
+  }
+
+ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+
+/*responsive*/
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+
+/*top bar*/
+.top-nav{
+    background-color: #03BA5B;
+    width:100%;
+    position: fixed; 
+    top: 0px;
+    left: 0px;
+    z-index:1;
+    height:48px;
+    display:block;
+}
+
+.top-nav img{
+    width: 132px;
+    margin-top:12px;
+    margin-left:12px;
+}
+
+#button-new{
+    width:130px;
+    border-radius: 100px;
+    height:28px;
+    background-color:#faab18;
+    display:inline-block;
+    color:white;
+    margin-left:20px;
+    vertical-align: middle;
+    text-align: center;
+    font-size:10px;
+    line-height:28px;
+    margin-left:48px;
+    margin-top:-20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#button-need-help{
+    width:48px;
+    height:48px;
+    color:white;
+    line-height: 48px;
+    text-align: center;
+    font-size:18px;
+    border-right:1px solid #112A30;
+    float:right;
+}
+#button-question{
+  width:48px;
+  height:48px;
+  color:white;
+  line-height: 48px;
+  text-align: center;
+  font-size:18px;
+  border-right:1px solid #112A30;
+  float:right;
+}
+#button-notification{
+  width:48px;
+  height:48px;
+  color:white;
+  line-height: 48px;
+  text-align: center;
+  font-size:18px;
+  border-right:1px solid #112A30;
+  float:right;
+}
+#button-profile{
+    width:100px;
+    height:48px;
+    color:white;
+    line-height: 48px;
+    text-align: center;
+    font-size:12px;
+    border-right:1px solid #112A30;
+    float:right;
+}
+/*top obar*/
+
+/*navigation styling*/
+.side-nav{
+    background-color:#1B3D46;
+    width:186px;
+    height:100%;
+    color:white;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size:10px;
+    display:inline-block;
+    position: fixed;
+    left: 0px;
+    top: 48px;
+    letter-spacing: 1px;
+}
+
+
+.sidenav-link{
+    height: 48px;
+    display:block;
+    border-bottom: solid 1px #112A30;
+    color:white;
+
+}
+
+.sidenav-link:hover{
+    background-color:#47636B;
+}
+
+.sidenav-link:hover + #nav-pressed{
+    display:block;
+}
+
+.sidenav-link:hover .nav-icon{
+    color:#faab18;
+}
+.nav-icon{
+    display:block;
+    position: absolute;
+    font-size:18px;
+    line-height: 48px;
+    height:48px;
+    width:48px;
+    text-align: center;
+}
+
+
+.nav-label{
+    display:inline-block;
+    margin-left:48px;
+    font-size:10px;
+    line-height: 48px;
+    width:132px;
+    vertical-align: middle;
+}
+
+.nav-label:hover{
+    color:white;
+}
+
+.nav-badge{
+    width:24px;
+    height:18px;
+    background-color:#112A30;
+    border-radius: 10px;
+    text-align: center;
+    display:block;
+    position: absolute;
+    margin-left:130px;
+    margin-top:-32px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+.nav-dropdown{
+    display:block;
+    position: absolute;
+    margin-top:-30px;
+    margin-left:160px;
+}
+
+#nav-pressed{
+    display:none;
+
+    width:6px;
+    height:48px;
+    background-color:#faab18;
+    margin-top:-50px;
+    margin-left:180px;
+    position: absolute;
+
+}
+
+/* ===navigation styling ends==== */
+
+
+
+/* ===content styling starts=== */
+
+.content-wrapper{
+  padding-top:12px;
+}
+.dashboard-card{
+  margin-bottom:12px;
+}
+.content{
+    float:left;
+    margin-top:58px;
+    width: 30%;
+}
+
+.content-card{
+    background-color:white;
+    height:auto;
+    display:inline-block;
+    width:580px;
+    border-radius: 3px;
+} 
+
+.content-title{
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom:1px solid#e3e3e3;
+    background:white;
+}
+
+.content-card h3{
+    margin-left:24px;
+}
+
+.counter{
+  border-right:1px solid #e3e3e3;
+  padding-bottom:24px;
+}
+.counter:nth-child(3){
+    border-right:0px solid #e3e3e3;
+}
+.counter:last-child{
+  border-right:0px solid #e3e3e3;
+}
+
+.counter-title{
+    font-size:12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.counter-num{
+    font-size:36px;
+    text-align:center;
+    margin-top:12px;
+    color:orange;
+}
+
+.content-tab{
+  font-size: 12px;
+  font-weight: 900;
+  border-bottom: 1px solid #f1f1f4;
+}
+
+.content-tab ul{
+  margin-left:24px;
+  display:inline-block;
+  height:36px;
+  line-height:36px;
+  vertical-align: middle;
+}
+
+.tab-selected{
+  color:#26BCB9;
+  border-bottom:3px solid #26BCB9;
+  width:60px;
+  text-align: center;
+}
+.content-table{
+  height:auto;
+}
+
+.table{
+  border-bottom:1px solid #f1f1f4;
+  padding:12px;
+  align-items: center;
+}
+
+.order-details{
+  display:inline-block;
+  position: absolute;
+
+}
+
+.order-number{
+  color:#26BCB9;
+  font-size:12px;
+}
+
+.order-date{
+  font-size:10px;
+  padding-top:6px;
+}
+
+.order-requester{
+  
+}
+.requested-by{
+  text-transform: uppercase;
+  font-size:10px;
+  font-weight:700;
+}
+
+.label-requester{
+  margin-top:6px;
+}
+
+.profile{
+  background-color:#26BCB9;
+  width:24px;
+  height:24px;
+  color:white;
+  font-size:18px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 24px;
+  display:inline-block;
+}
+
+.name{
+  height:24px;
+  line-height: 24px;
+  border:1px solid #e3e3e3;
+  background-color: #ffffff;
+  font-size:12px;
+  padding: 0px 12px;
+  display:inline-block;
+  margin-left:-4px;
+}
+
+#dropdown-label{
+  text-transform: uppercase;
+  font-size:10px;
+  margin-left:24px;
+  margin-top:12px;
+  
+}
+.location-dropdown{
+  margin-left:24px;
+  margin-top:12px;
+  width:530px;
+  border:1px solid #b3b3b3;
+  height:36px;
+  border-radius: 3px;
+}
+
+#dropdown-placeholder{
+  color:#bebebe;
+  font-size:12px;
+  display:inline-block;
+  margin-left:24px;
+  line-height:36px;
+  vertical-align: middle;
+}
+
+#dropdown-icon{
+  font-size:12px;
+  margin-left:380px;
+  display:inline-block;
+  position: absolute;
+  text-align: center;
+  line-height:36px;
+  vertical-align: middle;
+}
+
+.content-placeholder{
+  height:200px;
+  text-align: center;
+  margin-top:50px;
+  font-size:48px;
+}
+
+.text{
+  text-align: center;
+  margin-top:12px;
+  font-size:15px;
+}
+
+/*====Getting Started Card === */
+
+.tutorial-progress{
+  height:48px;
+  border-bottom: 1px solid #bebebe;
+  font-size:12px;
+  line-height:48px;
+
+
+}
+.tutorial-progress #title{
+  display:inline-block;
+}
+
+#count{
+  display:inline-block;
+  margin-left:300px;
+}
+.tutorial-mode{
+  border-bottom:1px solid #bebebe;
+  height:60px;
+  line-height:60px;
+  vertical-align: middle;
+}
+.tutorial-label{
+  margin-left:24px;
+  display:inline-block;
+  font-size:16px;
+}
+.tutorial-title{
+  font-size:15px;
+  margin-left:12px;
+  font-weight:700px;
+  display:inline-block;
+}
+.button-primary{
+  background-color:#26BCB9;
+  width:132px;
+  height:36px;
+  border-radius: 3px;
+  color:white;
+  text-transform: uppercase;
+  font-size:12px;
+  line-height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  display:inline-block;
+  margin-left:250px;
+}
+.tutorial-description{
+  background-color:#03BA5B;
+  height:100px;
+}
+.tutorial-paragraph{
+  font-size: 12px;
+  width:200px;
+  margin-left:24px;
+  display:inline-block;
+  margin-top:24px;
+  color:#ffffff;
+}
+
+.button-disabled{
+  background-color:#f1f1f4;
+  width:132px;
+  height:36px;
+  border-radius: 3px;
+  color:#bebebe;
+  text-transform: uppercase;
+  font-size:12px;
+  line-height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  display:inline-block;
+  margin-left:190px;
+  position: absolute;
+  margin-top:36px;
+}
+
+.content-space{
+  background-color:#e3e3e3;
+  height:auto;
+  padding-bottom:24px;
+}
+.content-space .profile{
+  margin-left:24px;
+  width:36px;
+  height:36px;
+  line-height: 36px;
+  border-radius: 3px;
+}
+
+.content-comment{
+  width:430px;
+  height:auto;
+  background-color: #ffffff;
+  border:1px solid #f1f1f4;
+  display:inline-block;
+  margin-left:12px;
+  font-size:12px;
+  margin-top:12px;
+  padding:24px;
+}

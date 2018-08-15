@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <title>Design x Code : Procurify Dasboard</title>
+</head>
+
+<body>
+    <div class="top-nav">
+        <img src="images/Logo.png">
+        <div id="button-new">+ new request</div>
+        <div id="button-profile">Xander Fang</div>
+        <div id="button-need-help">
+            <span class="icon-question"></span>
+        </div>
+        <div id="button-question">
+            <span class="icon-question"></span>
+        </div>
+        <div id="button-notification">
+            <span class="icon-question"></span>
+        </div>
+
+    </div>
+
+    <div class="side-nav">
+        <ul>
+            <a class="sidenav-link" href="">
+                <li>
+                    <div class="nav-icon">
+                        <span class="icon-home"></span>
+                    </div>
+                    <div class="nav-label"> Dashboard</div>
+                    <div class="nav-dropdown">
+                        <span class="icon-chevron-thick-down"></span>
+                    </div>
+                </li>
+            </a>
+            <div id="nav-pressed"></div>
+
+            <a class="sidenav-link" href="">
+                <li>
+                    <div class="nav-icon">
+                        <span class="icon-request"></span>
+                    </div>
+                    <div class="nav-label">Request</div>
+                    <div class="nav-badge">1</div>
+                    <div class="nav-dropdown">
+                        <span class="icon-chevron-thick-down"></span>
+                    </div>
+                </li>
+            </a>
+            <div id="nav-pressed"></div>
+
+            <a href="">
+                <li class="sidenav-link">
+                    <div class="nav-icon">
+                        <span class="icon-approval"></span>
+                    </div>
+                    <div class="nav-label">Approval</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="sidenav-link">
+                    <div class="nav-icon">
+                        <span class="icon-procure"></span>
+                    </div>
+                    <div class="nav-label">Procure</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="sidenav-link">
+                    <div class="nav-icon">
+                        <span class="icon-receive"></span>
+                    </div>
+                    <div class="nav-label">Receive</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="sidenav-link">
+                    <div class="nav-icon">
+                        <span class="icon-ap"></span>
+                    </div>
+                    <div class="nav-label">Accounts Payable</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="sidenav-link">
+                    <div class="nav-icon">
+                        <span class="icon-manage"></span>
+                    </div>
+                    <div class="nav-label">Manage</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="sidenav-link">
+                    <div class="nav-icon">
+                        <span class="icon-report"></span>
+                    </div>
+                    <div class="nav-label">Reports</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="sidenav-link">
+                    <div class="nav-icon">
+                        <span class="icon-settings"></span>
+                    </div>
+                    <div class="nav-label">Settings</div>
+                </li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <div class="card dashboard-card">
+                        <div class="card-body ">
+                            <div class="card-header content-title">Pending Items</div>
+                            <div class="card-body">
+                            <div class="row">    
+                                <div class="col-sm-12 col-md-6 col-lg-4 counter">
+                                    <div class="counter-title">Pending Order Requests</div>
+                                    <div class="counter-num">6</div>
+                                </div>
+                                <div class="ol-sm-12 col-md-6 col-lg-4 counter">
+                                    <div class="counter-title">Pending Expense Requests</div>
+                                    <div class="counter-num">0</div>
+                                </div>
+                                <div class="ol-sm-12 col-md-6 col-lg-4 counter">
+                                    <div class="counter-title">Pending Travel Requests</div>
+                                    <div class="counter-num">0</div>
+                                </div>
+                                <br>
+                                <div class="ol-sm-12 col-md-6 col-lg-4 counter">
+                                    <div class="counter-title">Orders Pending Approval</div>
+                                    <div class="counter-num">44</div>
+                                </div>
+                                <div class="ol-sm-12 col-md-6 col-lg-4 counter">
+                                    <div class="counter-title">Expenses Pending Approval</div>
+                                    <div class="counter-num">13</div>
+                                </div>
+                                <div class="ol-sm-12 col-md-6 col-lg-4 counter">
+                                    <div class="counter-title">Travels Pending Approval</div>
+                                    <div class="counter-num">6</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card dashboard-card">
+                        <div class="card-body">
+                            <h5 class="card-header content-title">Recent Activity</h5>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active content-title" href="#">Orders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link content-title" href="#">Expense Reports</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link content-title" href="#">Travel</a>
+                                </li>
+       
+                            </ul>
+                            <div class="content-table">
+                                <div class="table">
+                                    <div class="row">  
+                                        <div class="col-sm-12 col-md-4 col-lg-3">
+                                            <button type="button" class="btn btn-primary btn-pending">Pending Order</button>  
+                                        </div>
+                                        <div class="col-sm-6 col-md-3 col-lg-5 ">
+                                            <div class="order-number">Order #249</div>
+                                            <div class="order-date">Jul 24, 2018, 12:13PM</div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-5 col-lg-4 ">
+                                            <div class="requested-by">Requested By:</div>
+                                            <div class="label-requester">
+                                                <div class="profile">
+                                                    <span class="icon-other"></span>
+                                                </div>
+                                                <div class="name">Site Administrator</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <div class="row">  
+                                        <div class="col-sm-12 col-md-4 col-lg-3">
+                                            <button type="button" class="btn btn-primary btn-pending">Pending Order</button>  
+                                        </div>
+                                        <div class="col-sm-6 col-md-3 col-lg-5 ">
+                                            <div class="order-number">Order #249</div>
+                                            <div class="order-date">Jul 24, 2018, 12:13PM</div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-5 col-lg-4 ">
+                                            <div class="requested-by">Requested By:</div>
+                                            <div class="label-requester">
+                                                <div class="profile">
+                                                    <span class="icon-other"></span>
+                                                </div>
+                                                <div class="name">Site Administrator</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <div class="row">  
+                                        <div class="col-sm-12 col-md-4 col-lg-3">
+                                            <button type="button" class="btn btn-primary btn-pending">Pending Order</button>  
+                                        </div>
+                                        <div class="col-sm-6 col-md-3 col-lg-5 ">
+                                            <div class="order-number">Order #249</div>
+                                            <div class="order-date">Jul 24, 2018, 12:13PM</div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-5 col-lg-4 ">
+                                            <div class="requested-by">Requested By:</div>
+                                            <div class="label-requester">
+                                                <div class="profile">
+                                                    <span class="icon-other"></span>
+                                                </div>
+                                                <div class="name">Site Administrator</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="card dashboard-card">
+                        <div class="card-header content-title">Department Budgets Overview</div>
+                            <div id="dropdown-label">Location</div>
+                            <div class="location-dropdown">
+                                <div class="dropdown">
+                                    <div id="dropdown-placeholder">Select a location</div>
+                                    <div id="dropdown-icon">
+                                        <span class="icon-chevron-thick-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-placeholder">
+                                <div>
+                                    <span class="icon-emptystate"></span>
+                                </div>
+                                <div class="text">No info avaialble</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-5">
+                    <div class="card dashboard-card">
+                        <div class="card-body">
+                            <h5 class="card-header content-title">Getting Started</h5>
+                            <div class="tutorial-progress">
+                                    <div class="card-header content-title">Tutorial Progress</div>
+                                    <div id="count">4/0</div>
+                                </div>
+                                <div class="tutorial-mode">
+                                    <div class="tutorial-label">
+                                        <span class="icon-approval"></span>
+                                    </div>
+                                    <div class="tutorial-title">Make a Request</div>
+                                    <div class="button-primary">Make a Request</div>
+                                </div>
+                                <div class="tutorial-mode">
+                                    <div class="tutorial-label">
+                                        <span class="icon-approval"></span>
+                                    </div>
+                                    <div class="tutorial-title">Make a Request</div>
+                                    <div class="button-primary">Make a Request</div>
+                                </div>
+                                <div class="tutorial-mode">
+                                    <div class="tutorial-label">
+                                        <span class="icon-approval"></span>
+                                    </div>
+                                    <div class="tutorial-title">Make a Request</div>
+                                    <div class="button-primary">Make a Request</div>
+                                </div>
+                                <div class="tutorial-mode">
+                                    <div class="tutorial-label">
+                                        <span class="icon-approval"></span>
+                                    </div>
+                                    <div class="tutorial-title">Make a Request</div>
+                                    <div class="button-primary">Make a Request</div>
+                                </div>
+                                <div class="tutorial-description">
+                                    <div class="tutorial-paragraph">You're currently in tutorial mode! Ready for the big time? Click end tutorial to clear the dummy data and
+                                        start fresh!</div>
+                                    <div class="btn btn-disable">End Tutorial</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="content">
+        
+        <div class="content-card">
+            <div class="content-title">
+                <h3>Pending Items</h3>
+            </div>
+            <div class="counter">
+                <div class="counter-title">Pending Order Requests</div>
+                <div class="counter-num">6</div>
+            </div>
+            <div class="counter">
+                <div class="counter-title">Pending Expense Requests</div>
+                <div class="counter-num">0</div>
+            </div>
+            <div class="counter">
+                <div class="counter-title">Pending Travel Requests</div>
+                <div class="counter-num">0</div>
+            </div>
+            <div class="counter">
+                <div class="counter-title">Orders Pending Approval</div>
+                <div class="counter-num">44</div>
+            </div>
+            <div class="counter">
+                <div class="counter-title">Expenses Pending Approval</div>
+                <div class="counter-num">13</div>
+            </div>
+            <div class="counter">
+                <div class="counter-title">Travels Pending Approval</div>
+                <div class="counter-num">6</div>
+            </div>
+
+        </div>
+
+        <div class="content-card">
+            <div class="content-title">
+                <h3>Recent Activity</h3>
+            </div>
+            <div class="content-tab">
+                <ul id="tab-selected">Orders</ul>
+                <ul>Expense Reports</ul>
+                <ul>Travel</ul>
+            </div>
+            <div class="content-table">
+                <div class="table">
+                    <button type="button" class="btn btn-primary">Pending Order</button>
+                    <div class="order-details">
+                        <div class="order-number">Order #249</div>
+                        <div class="order-date">Jul 24, 2018, 12:13PM</div>
+                    </div>
+                    <div class="order-requester">
+                        <div class="requested-by">Requested By:</div>
+                        <div class="label-requester">
+                            <div class="profile">
+                                <span class="icon-other"></span>
+                            </div>
+                            <div class="name">Site Administrator</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <button type="button" class="btn btn-primary">Pending Order</button>
+                    <div class="order-details">
+                        <div class="order-number">Order #249</div>
+                        <div class="order-date">Jul 24, 2018, 12:13PM</div>
+                    </div>
+                    <div class="order-requester">
+                        <div class="requested-by">Requested By:</div>
+                        <div class="label-requester">
+                            <div class="profile">
+                                <span class="icon-other"></span>
+                            </div>
+                            <div class="name">Site Administrator</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <button type="button" class="btn btn-primary">Pending Order</button>
+                    <div class="order-details">
+                        <div class="order-number">Order #249</div>
+                        <div class="order-date">Jul 24, 2018, 12:13PM</div>
+                    </div>
+                    <div class="order-requester">
+                        <div class="requested-by">Requested By:</div>
+                        <div class="label-requester">
+                            <div class="profile">
+                                <span class="icon-other"></span>
+                            </div>
+                            <div class="name">Site Administrator</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <button type="button" class="btn btn-primary">Pending Order</button>
+                    <div class="order-details">
+                        <div class="order-number">Order #249</div>
+                        <div class="order-date">Jul 24, 2018, 12:13PM</div>
+                    </div>
+                    <div class="order-requester">
+                        <div class="requested-by">Requested By:</div>
+                        <div class="label-requester">
+                            <div class="profile">
+                                <span class="icon-other"></span>
+                            </div>
+                            <div class="name">Site Administrator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <div class="content-title">
+                <h3>Department Budgets Overview</h3>
+            </div>
+            <div id="dropdown-label">Location</div>
+            <div class="location-dropdown">
+                <div class="dropdown">
+                    <div id="dropdown-placeholder">Select a location</div>
+                    <div id="dropdown-icon">
+                        <span class="icon-chevron-thick-down"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-placeholder">
+                <div>
+                    <span class="icon-emptystate"></span>
+                </div>
+                <div class="text">No info avaialble</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-card">
+            <div class="content-title">
+                <h3>Getting Started</h3>
+            </div>
+            <div class="tutorial-progress">
+                <div id="title">Tutorial Progress</div>
+                <div id="count">4/0</div>
+            </div>
+            <div class="tutorial-mode">
+                <div class="tutorial-label">
+                    <span class="icon-approval"></span>
+                </div>
+                <div class="tutorial-title">Make a Request</div>
+                <div class="button-primary">Make a Request</div>
+            </div>
+            <div class="tutorial-mode">
+                <div class="tutorial-label">
+                    <span class="icon-approval"></span>
+                </div>
+                <div class="tutorial-title">Make a Request</div>
+                <div class="button-primary">Make a Request</div>
+            </div>
+            <div class="tutorial-mode">
+                <div class="tutorial-label">
+                    <span class="icon-approval"></span>
+                </div>
+                <div class="tutorial-title">Make a Request</div>
+                <div class="button-primary">Make a Request</div>
+            </div>
+            <div class="tutorial-mode">
+                <div class="tutorial-label">
+                    <span class="icon-approval"></span>
+                </div>
+                <div class="tutorial-title">Make a Request</div>
+                <div class="button-primary">Make a Request</div>
+            </div>
+            <div class="tutorial-description">
+                <div class="tutorial-paragraph">You're currently in tutorial mode! Ready for the big time? Click end tutorial to clear the dummy data and
+                    start fresh!</div>
+                <div class="button-disabled">End Tutorial</div>
+            </div>
+        </div>
+        <div class="content-card">
+            <div class="content-title">
+                <h3>Recent Comments</h3>
+            </div>
+            <div class="content-space">
+                <div class="profile">
+                    <span class="icon-other"></span>
+                </div>
+                <div class="content-comment">hello how is your day? The rating scale for Performance Planning and Review is made up of five factors: Poor,
+                    Needs Improvement, Meets Requirements, Exceeds Requirements, and Outstanding. </div>
+                <div class="profile">
+                    <span class="icon-other"></span>
+                </div>
+                <div class="content-comment">hello how is your day? The rating scale for Performance Planning and Review is made up of five factors: Poor,
+                    Needs Improvement, Meets Requirements, Exceeds Requirements, and Outstanding. </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    </div>
+
+</body>
+
+</html>
