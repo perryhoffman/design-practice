@@ -131,11 +131,11 @@ a {
   z-index: 50;
 }
 .object-icon {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
   text-align: center;
-  line-height: 50px;
+  line-height: 35px;
   background-size:cover;
   left: 0;
   top: 0;
@@ -306,18 +306,18 @@ a {
   /* background-color: #fff; */
 }
 .comment-wrap {
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   /* border-bottom: 1px solid #eee; */
 }
 .comment, .comment h5, .sub-info {
   display: inline-block;
 }
 .comment-block {
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 .comment {
   display: block;
-  margin: -30px 0 20px 0;
+  /* margin: -30px 0 20px 0; */
   padding: 25px 30px !important;
   background: #fff;
   border-radius: 4px;
@@ -329,6 +329,7 @@ box-shadow: 0 1px 3px 0 rgba(0,0,0,0.04);
 .comment h5 {
   font-size: .85rem;
   font-weight: 500;
+  line-height: 35px;
   padding-right: 10px;
   padding-bottom: 10px;
 }
@@ -351,7 +352,7 @@ box-shadow: 0 1px 3px 0 rgba(0,0,0,0.04);
 }
 .activity-wrap {
   padding: 30px 30px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   background: #fff;
   border-radius: 4px;
   border: 1px solid #EAEDF3;
